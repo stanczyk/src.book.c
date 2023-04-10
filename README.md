@@ -30,8 +30,8 @@ Kody źródłowe przykładów do książki:<br />
 	on-line: [The Open Group portal](https://pubs.opengroup.org/onlinepubs/9699919799/)
 - [ISO/IEC 646:1991](https://www.iso.org/standard/4777.html) Information technology - ISO 7-bit coded character set for information interchange
 - [ISO/IEC 9899:2018](https://www.iso.org/standard/74528.html) Information technology - Programming languages - C 
-- [ISO/IEC 9899:2023](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n3054.pdf) Information technology - Programming languages - C,
-	working draft N3054
+- [ISO/IEC 9899:2023](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n3096.pdf) Information technology - Programming languages - C,
+	working draft N3096
 - [ISO/IEC 10646:2020](https://www.iso.org/standard/76835.html) Information technology - Universal coded character set (UCS)
 - [ISO/IEC 30112:2020](https://www.iso.org/standard/71987.html) Information technology - Specification methods for cultural conventions
 - [ISO/IEC 60559:2020](https://www.iso.org/standard/80985.html) Information technology - Microprocessor Systems - Floating-Point arithmetic,
