@@ -1,0 +1,18 @@
+#
+# Makefile
+# Copyright (c) 2022-2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+#
+TOOLS := ../make
+include $(TOOLS)/make1b.mk
+include $(TOOLS)/make_c1.mk
+
+.PHONY: all
+all: prg21-01
+
+prg21-01: CC = clang
+prg21-01: CFLAGS = $(CLFLAGS)
+prg21-01: prg21-01.c
+
+include $(TOOLS)/make_c2.mk
+include $(TOOLS)/make_clean.mk
+# eof.
