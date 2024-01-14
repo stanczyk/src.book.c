@@ -1,6 +1,6 @@
 #
 # Makefile
-# Copyright (c) 2022-2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+# Copyright (c) 2022-2024 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
 #
 TOOLS := ../make
 include $(TOOLS)/make1b.mk
@@ -12,7 +12,6 @@ DONT_INDENT += prg03-03.c
 
 .PHONY: all
 all: prg03-01 prg03-02 prg03-03 prg03-04 prg03-05
-
 prg03-01: prg03-01.c
 prg03-02: prg03-02.c
 prg03-02: CFLAGS += -Wno-trigraphs

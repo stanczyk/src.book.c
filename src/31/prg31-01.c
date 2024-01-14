@@ -8,10 +8,11 @@
  * @brief <stdckdint.h>: użycie makra z rodziny ckd_add
  *
  * W programie użyto "ckdint.h" z https://gitlab.com/Kamcuk/ckd/
- * zamiast <stdckdint.h> -- bo gcc jeszcze tego nie wspiera
+ * zamiast <stdckdint.h> - gcc 12 i 13 (13.1.0, 13.2.0) nie wspiera jeszcze tego nagłówka
  */
 #include <limits.h>
 #include "ckdint.h"
+// #include <stdckdint.h>
 #include <stdio.h>
 #include <stdbool.h>
 

@@ -8,13 +8,13 @@
  * @brief <stdio.h>: dostępne stałe symboliczne
  */
 #include <stdio.h>
+#include "../00/head0-01.h"
 
 int main (void)
 {
-	puts("zdefiniowane makra:");
-	#ifdef __STDC_LIB_EXT1__
-		puts("__STDC_LIB_EXT1__");
-	#endif
+	SHOW_DEFINE(__STDC_VERSION__);
+	SHOW_DEFINE(__STDC_VERSION_STDIO_H__);
+	SHOW_DEFINE(__STDC_LIB_EXT1__);
 }
 
 /* eof. */

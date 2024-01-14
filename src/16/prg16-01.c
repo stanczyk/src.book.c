@@ -8,7 +8,7 @@
  * @brief <errno.h>: Użycie typu errno_t
  */
 #ifdef __STDC_LIB_EXT1__
-#define  __STDC_WANT_LIB_EXT1__ 1
+#define __STDC_WANT_LIB_EXT1__ 1
 #else
 #error "brak wsparcia dla __STDC_LIB_EXT1__"
 #endif

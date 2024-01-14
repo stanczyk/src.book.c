@@ -22,7 +22,7 @@ int main (void)
 	printf ("%s\n", s1);
 	printf ("%s\n", s2);
 	// printf ("%ls\n", s3);
-	printf ("%ls\n", s4);
+	printf ("%ls\n", (wchar_t *) s4);
 	printf ("%ls\n", s5);
 }
 

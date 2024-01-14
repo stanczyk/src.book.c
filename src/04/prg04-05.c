@@ -13,9 +13,10 @@
 int main (void)
 {
 	printf ("__WORDSIZE = %i\n", __WORDSIZE);
+	printf ("  CHAR_BIT = %i\n", CHAR_BIT);
 	printf ("typ           (min, max), ilość bitów\n---------------------------\n");
 	printf ("bool          (%d, %d), %d\n",             0,   BOOL_MAX,   BOOL_WIDTH);
-	printf ("char          (%d, %d), %d\n",      CHAR_MIN,   CHAR_MAX,     CHAR_BIT);
+	printf ("char          (%d, %d), %d\n",      CHAR_MIN,   CHAR_MAX,   CHAR_BIT);
 	printf ("       signed (%d, %d), %d\n",     SCHAR_MIN,  SCHAR_MAX,  SCHAR_WIDTH);
 	printf ("     unsigned (%d, %d), %d\n",             0,  UCHAR_MAX,  UCHAR_WIDTH);
 	printf ("short int     (%d, %d), %d\n",      SHRT_MIN,   SHRT_MAX,   SHRT_WIDTH);

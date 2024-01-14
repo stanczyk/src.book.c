@@ -38,8 +38,8 @@ Kody źródłowe przykładów do książki:<br />
 	odpowiednik IEEE 754-2019
 
 <sub><sub>
-Copyright &copy; 2023 Jarosław Stańczyk *<jaroslaw@stanczyk.pro>*  
-Ostatnia modyfikacja 2023.03.03
+Copyright &copy; 2023-2024 Jarosław Stańczyk *<jaroslaw@stanczyk.pro>*  
+Ostatnia modyfikacja 2024.01.14
 </sub></sub>
 <sub><sub>
 eof.

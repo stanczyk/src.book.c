@@ -7,20 +7,15 @@
  * @file prg41-00.c
  * @brief <uchar.h>: dostępne stałe symboliczne
  */
-#include <stdio.h>
+#include <uchar.h>
+#include "../00/head0-01.h"
 
 int main (void)
 {
-	puts("zdefiniowane makra:");
-	#ifdef __STDC_UTF_8__
-		puts("__STDC_UTF_8__");
-	#endif
-	#ifdef __STDC_UTF_16__
-		puts("__STDC_UTF_16__");
-	#endif
-	#ifdef __STDC_UTF_32__
-		puts("__STDC_UTF_32__");
-	#endif
+	SHOW_DEFINE(__STDC_VERSION__);
+	SHOW_DEFINE(__STDC_VERSION_UCHAR_H__);
+	SHOW_DEFINE(__STDC_UTF_16__);
+	SHOW_DEFINE(__STDC_UTF_32__);
 }
 
 /* eof. */

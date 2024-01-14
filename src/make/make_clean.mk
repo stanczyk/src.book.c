@@ -1,6 +1,6 @@
 #
 # make_clean.mk
-# Copyright (c) 2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+# Copyright (c) 2023-2024 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
 
 # Clean targets
 #

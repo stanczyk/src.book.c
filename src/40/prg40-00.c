@@ -7,18 +7,17 @@
  * @file prg40-00.c
  * @brief <time.h>: dostępne stałe symboliczne
  */
-#include <stdio.h>
 #include <time.h>
+#include "../00/head0-01.h"
 
 int main (void)
 {
-	puts("zdefiniowane makra:");
-	#ifdef __STDC_VERSION_TIME_H__
-		puts("__STDC_VERSION_TIME_H__");
-	#endif
-	#ifdef __STDC_LIB_EXT1__
-		puts("__STDC_LIB_EXT1__");
-	#endif
+	SHOW_DEFINE(__STDC_VERSION__);
+	SHOW_DEFINE(__STDC_VERSION_TIME_H__);
+	SHOW_DEFINE(TIME_MONOTONIC);
+	SHOW_DEFINE(TIME_ACTIVE);
+	SHOW_DEFINE(TIME_THREAD_ACTIVE);
+	SHOW_DEFINE(__STDC_LIB_EXT1__);
 }
 
 /* eof. */

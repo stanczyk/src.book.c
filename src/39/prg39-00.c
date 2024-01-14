@@ -7,15 +7,13 @@
  * @file prg39-00.c
  * @brief <threads.h>: dostępne stałe symboliczne
  */
-#include <stdio.h>
 #include <threads.h>
+#include "../00/head0-01.h"
 
 int main (void)
 {
-	puts("zdefiniowane makra:");
-	#ifdef __STDC_NO_THREADS__
-		puts("__STDC_NO_THREADS__");
-	#endif
+	SHOW_DEFINE(__STDC_VERSION__);
+	SHOW_DEFINE(__STDC_NO_THREADS__);
 }
 
 /* eof. */

@@ -1,15 +1,13 @@
 #
 # Makefile
-# Copyright (c) 2022-2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+# Copyright (c) 2022-2024 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
 #
 TOOLS := ../make
 include $(TOOLS)/make1b.mk
 include $(TOOLS)/make_c1.mk
 
 .PHONY: all
-all: 	prg39-00 \
-		prg39-01 prg39-02 prg39-03 prg39-04 prg39-05 prg39-06
-
+all: prg39-00 prg39-01 prg39-02 prg39-03 prg39-04 prg39-05 prg39-06
 prg39-00: prg39-00.c
 # prg39-01: CFLAGS += -DNUM_THREADS=10
 prg39-01: CFLAGS += -pthread

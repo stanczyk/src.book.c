@@ -1,14 +1,14 @@
 #
 # Makefile
-# Copyright (c) 2022-2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+# Copyright (c) 2022-2024 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
 #
 TOOLS := ../make
 include $(TOOLS)/make1b.mk
 include $(TOOLS)/make_c1.mk
 
 .PHONY: all
-all: prg13-01
-
+all: prg13-00 prg13-01
+prg13-00: prg13-00.c
 # prg13-01: CFLAGS += -DNDEBUG
 prg13-01: LDLIBS += -lm
 prg13-01: prg13-01.c

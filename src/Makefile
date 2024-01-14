@@ -1,6 +1,6 @@
 #
 # Makefile
-# Copyright (c) 2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+# Copyright (c) 2023-2024 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
 #
 TOOLS := ./make
 include $(TOOLS)/make1b.mk
@@ -11,7 +11,7 @@ INDENT_SUBDIR = yes
 .PHONY: all
 all:
 	@for dir in ??; do \
-		if [ -d $${dir} ]; then \
+		if [ -d $${dir} -a $${dir} != "00" -a $${dir} != "make" ]; then \
 			cd "$${dir}"; \
 				$(MAKE) -j6 $@; \
 			cd ..; \

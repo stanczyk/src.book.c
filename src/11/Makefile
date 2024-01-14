@@ -1,21 +1,22 @@
 #
 # Makefile
-# Copyright (c) 2022-2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+# Copyright (c) 2022-2024 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
 #
 TOOLS := ../make
 include $(TOOLS)/make1b.mk
 include $(TOOLS)/make_c1.mk
 
 .PHONY: all
-all: 	prg11-01 prg11-02 prg11-03 prg11-04 \
-				 prg11-12 prg11-13 prg11-14 prg11-15 prg11-16          prg11-18 prg11-19 \
-		prg11-21                   prg11-24 prg11-25
-
+all: prg11-01 prg11-02 prg11-03 prg11-04 \
+	          prg11-12 prg11-13 prg11-14 prg11-15 prg11-16          prg11-18 prg11-19 \
+	 prg11-21                   prg11-24 prg11-25
 prg11-01: prg11-01.c
 prg11-02: prg11-02.c prj_head.h
 prg11-03: CFLAGS += -D WERSJA=1
 prg11-03: prg11-03.c wersja-1.h wersja-2.h
 prg11-04: prg11-04.c wersja-1.h wersja-2.h
+# prg11-05 -- prg11-11 - kompilacja powoduje błędy
+# brak wsparcia w gcc 12 i 13 (13.1.0, 13.2.0) dla nowych funkcjonalności
 prg11-05: prg11-05.c  # błąd kompilacji - brak wsparcia dla #embed
 prg11-06: prg11-06.c  # błąd kompilacji - brak wsparcia dla #embed
 prg11-07: prg11-07.c  # błąd kompilacji - brak wsparcia dla #embed

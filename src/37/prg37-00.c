@@ -7,15 +7,14 @@
  * @file prg37-00.c
  * @brief <string.h>: dostępne stałe symboliczne
  */
-#include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
+#include "../00/head0-01.h"
 
 int main (void)
 {
-	puts("zdefiniowane makra:");
-	#ifdef __STDC_LIB_EXT1__
-		puts("__STDC_LIB_EXT1__");
-	#endif
+	SHOW_DEFINE(__STDC_VERSION__);
+	SHOW_DEFINE(__STDC_VERSION_STRING_H__);
+	SHOW_DEFINE(__STDC_LIB_EXT1__);
 }
 
 /* eof. */

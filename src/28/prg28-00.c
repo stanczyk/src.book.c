@@ -8,14 +8,13 @@
  * @brief <stdatomic.h>: dostępne stałe symboliczne
  */
 #include <stdatomic.h>
-#include <stdio.h>
+#include "../00/head0-01.h"
 
 int main (void)
 {
-	puts("zdefiniowane makra:");
-	#ifdef __STDC_NO_ATOMICS__
-		puts("__STDC_NO_ATOMICS__");
-	#endif
+	SHOW_DEFINE(__STDC_VERSION__);
+	SHOW_DEFINE(__STDC_VERSION_STDATOMIC_H__);
+	SHOW_DEFINE(__STDC_NO_ATOMICS__);
 }
 
 /* eof. */

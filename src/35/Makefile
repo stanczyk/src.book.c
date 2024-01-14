@@ -1,16 +1,15 @@
 #
 # Makefile
-# Copyright (c) 2022-2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+# Copyright (c) 2022-2024 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
 #
 TOOLS := ../make
 include $(TOOLS)/make1b.mk
 include $(TOOLS)/make_c1.mk
 
 .PHONY: all
-all:	prg35-00 \
-		prg35-01 prg35-02 prg35-03 prg35-04 prg35-05 prg35-06 prg35-07 prg35-08 prg35-09 prg35-10 \
-		prg35-11 prg35-12 prg35-13 prg35-14 prg35-15
-
+all: prg35-00 \
+	 prg35-01 prg35-02 prg35-03 prg35-04 prg35-05 prg35-06 prg35-07 prg35-08 prg35-09 prg35-10 \
+	 prg35-11 prg35-12 prg35-13 prg35-14 prg35-15 prg35-16
 prg35-00: prg35-00.c
 prg35-01: prg35-01.c
 prg35-02: prg35-02.c

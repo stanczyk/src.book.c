@@ -9,7 +9,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
+// #include <stdbool.h> w C23 dołączenie tego nagłówka nie jest konieczne, testowano z gcc 13.1.0
 
 int main (void)
 {
@@ -19,7 +19,7 @@ int main (void)
 	{
 		printf ("Pętla będzie działać, dopóki \"kontynuuj\" "
 			"będzie prawdziwe.\n");
-		kontynuuj = false;  // lub kontynuuj = 0;
+		kontynuuj = false;  // lub tożsame -> kontynuuj = 0;
 	}
 	printf ("Koniec!\n");
 	return EXIT_SUCCESS;

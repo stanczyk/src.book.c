@@ -1,6 +1,6 @@
 #
 # make_c2.mk
-# Copyright (c) 2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+# Copyright (c) 2023-2024 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
 #
 CLEAN += clean-c
 CLEAN_ALL += clean-all-c

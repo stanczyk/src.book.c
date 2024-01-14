@@ -8,33 +8,19 @@
  * @brief <math.h>: dostępne stałe symboliczne
  */
 #include <math.h>
-#include <stdio.h>
-
-void show_STDC_VERSION_MATH_H (void)
-{
-	printf("__STDC_VERSION_MATH_H__ ");
-	#ifdef __STDC_VERSION_MATH_H__
-		printf("= %li\n", __STDC_VERSION_MATH_H__);
-	#else
-		printf("nie jest zdefiniowane\n");
-	#endif
-}
+#include "../00/head0-01.h"
 
 int main (void)
 {
-	puts("zdefiniowane makra:");
-	show_STDC_VERSION_MATH_H ();
+	SHOW_DEFINE(__STDC_VERSION__);
+	SHOW_DEFINE(__STDC_VERSION_MATH_H__);
+	printf("\n" );
 
-	#ifdef __STDC_IEC_559__
-		puts("__STDC_IEC_559__");
-	#endif
-
-	#ifdef __STDC_IEC_60559_BFP__
-		puts("__STDC_IEC_60559_BFP__");
-	#endif
-	#ifdef __STDC_IEC_60559_DFP__
-		puts("__STDC_IEC_60559_DFP__");
-	#endif
+	printf("Obsługa liczb zmiennoprzecinkowych\n");
+	SHOW_DEFINE(__STDC_IEC_559__);
+	SHOW_DEFINE(__STDC_IEC_60559_BFP__);
+	SHOW_DEFINE(__STDC_IEC_60559_DFP__);
+	SHOW_DEFINE(__STDC_IEC_60559_TYPES__);
 }
 
 /* eof. */

@@ -7,21 +7,15 @@
  * @file prg38-00.c
  * @brief <tgmath.h>: dostępne stałe symboliczne
  */
-#include <stdio.h>
 #include <tgmath.h>
+#include "../00/head0-01.h"
 
 int main (void)
 {
-	puts("zdefiniowane makra:");
-	#ifdef __STDC_VERSION_TGMATH_H__
-		puts("__STDC_VERSION_TGMATH_H__");
-	#endif
-	#ifdef __STDC_NO_COMPLEX__
-		puts("__STDC_NO_COMPLEX__");
-	#endif
-	#ifdef __STDC_IEC_60559_DFP__
-		puts("__STDC_IEC_60559_DFP__");
-	#endif
+	SHOW_DEFINE(__STDC_VERSION__);
+	SHOW_DEFINE(__STDC_VERSION_TGMATH_H__);
+	SHOW_DEFINE(__STDC_NO_COMPLEX__);
+	SHOW_DEFINE(__STDC_IEC_60559__);
 }
 
 /* eof. */

@@ -6,6 +6,8 @@
  *
  * @file prg04-07.c
  * @brief Użycie typu _BitInt
+ *
+ * @pre gcc w wersji 12.1.0, 12.2.0, 13.1.0, 13.2.0 nie wspiera _BitInt
  */
 #include <limits.h>
 #include <stdio.h>

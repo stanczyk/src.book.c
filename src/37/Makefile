@@ -1,16 +1,15 @@
 #
 # Makefile
-# Copyright (c) 2022-2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+# Copyright (c) 2022-2024 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
 #
 TOOLS := ../make
 include $(TOOLS)/make1b.mk
 include $(TOOLS)/make_c1.mk
 
 .PHONY: all
-all:	prg37-00 \
-		prg37-01 prg37-02 prg37-03 prg37-04 prg37-05 prg37-06 prg37-07 prg37-08 prg37-09 prg37-10 \
-		prg37-11 prg37-12 prg37-13 prg37-14
-
+all: prg37-00 \
+	 prg37-01 prg37-02 prg37-03 prg37-04 prg37-05 prg37-06 prg37-07 prg37-08 prg37-09 prg37-10 \
+	 prg37-11 prg37-12 prg37-13 prg37-14
 prg37-00: prg37-00.c
 prg37-01: prg37-01.c
 prg37-02: LDLIBS += -lsafec

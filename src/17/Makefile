@@ -1,15 +1,13 @@
 #
 # Makefile
-# Copyright (c) 2022-2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+# Copyright (c) 2022-2024 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
 #
 TOOLS := ../make
 include $(TOOLS)/make1b.mk
 include $(TOOLS)/make_c1.mk
 
 .PHONY: all
-all: 	prg17-00 \
-		prg17-01 prg17-02 prg17-03 prg17-04 prg17-05
-
+all: prg17-00 prg17-01 prg17-02 prg17-03 prg17-04 prg17-05
 prg17-00: prg17-00.c
 prg17-01: LDLIBS += -lm
 prg17-01: prg17-01.c

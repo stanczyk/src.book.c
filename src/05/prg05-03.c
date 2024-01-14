@@ -10,8 +10,8 @@
 #include <limits.h>
 int main (void)
 {
-	enum E1: short;
-	enum E2: short;
+	enum E1 : short;
+	enum E2 : short;
 
 	enum E1 : short { m11, m12 };
 	enum E1 x = m11;

@@ -21,7 +21,8 @@ int kwadrat (int a)
 
 int main (void)
 {
-	int (*wsk) ();
+	// int (*wsk) (); 		// deklaracja wsk niepoprawna dla gcc 13
+	int (*wsk) (int, ...);
 
 	wsk = suma;
 	printf ("4 + 5 = %d\n", wsk (4, 5));

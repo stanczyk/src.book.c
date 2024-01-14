@@ -1,6 +1,6 @@
 #
 # Makefile
-# Copyright (c) 2022-2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+# Copyright (c) 2022-2024 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
 #
 TOOLS := ../make
 include $(TOOLS)/make1b.mk
@@ -9,7 +9,6 @@ DONT_INDENT += prg01-02.c
 
 .PHONY: all
 all: prg01-01 prg01-02
-
 prg01-01: prg01-01.c
 prg01-02: prg01-02.c
 

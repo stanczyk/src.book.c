@@ -1,20 +1,18 @@
 #
 # Makefile
-# Copyright (c) 2022-2023 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
+# Copyright (c) 2022-2024 Jarosław Stańczyk <jaroslaw@stanczyk.pro>
 #
 TOOLS := ../make
 include $(TOOLS)/make1b.mk
 include $(TOOLS)/make_c1.mk
 
 .PHONY: all
-all:	prg06-01 prg06-02 prg06-03 prg06-04 prg06-05 		  prg06-07 			prg06-09 		  \
-		prg06-11 							prg06-15 prg06-16 prg06-17 prg06-18 prg06-19 prg06-20 \
-		prg06-21 prg06-22 prg06-23 prg06-24 		 prg06-26 prg06-27 prg06-28 prg06-29 prg06-30
-
+all: prg06-01 prg06-02 prg06-03 prg06-04 prg06-05          prg06-07          prg06-09 prg06-10 \
+	 prg06-11                            prg06-15 prg06-16 prg06-17 prg06-18 prg06-19 prg06-20 \
+	 prg06-21 prg06-22 prg06-23 prg06-24          prg06-26 prg06-27 prg06-28 prg06-29 prg06-30
 %.o: %.c
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 	$(CC) -MM $(CFLAGS) $*.c > $*.d
-
 prg06-01: prg06-01.c
 prg06-02: prg06-02.c
 prg06-03: prg06-03.c
@@ -34,8 +32,10 @@ prg06-08: prg06-08a.o prg06-08b.o
 # prg06-09: CFLAGS += -DNUM_THREADS=9
 prg06-09: CFLAGS += -pthread
 prg06-09: prg06-09.c
-# prg06-10: CC=clang
-prg06-10: prg06-10.c  # błąd kompilacji, gcc 12.1.0 nie wspiera specyfikatora constexpr
+# prg06-10:
+# - gcc 11 i 12 powodują błąd kompilacji (brak wsparcia dla specyfikatora constexpr)
+# - gcc 13 działa poprawnie
+prg06-10: prg06-10.c
 prg06-11: prg06-11.c
 prg06-12: prg06-12.c  # zamierzony błąd kompilacji
 prg06-13: prg06-13.c  # zamierzony błąd kompilacji

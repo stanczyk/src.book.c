@@ -14,12 +14,13 @@
 #define EUR u8"\u20ac"
 int main (void)
 {
-	setlocale (LC_ALL, "pl_PL.UTF-8");
+	// setlocale (LC_ALL, "pl_PL.UTF-8");
+	setlocale(LC_ALL, "en_US.utf8");
 	mbstate_t stan;
 	memset (&stan, 0, sizeof stan);
 
 	wchar_t wc;
-	int dl = mbrtowc (&wc, EUR, 5, &stan);
+	int dl = mbrtowc (&wc, (const char * restrict) EUR, 5, &stan);
 	wprintf (L"znak %lc zajmuje %d bajty \n", wc, dl);
 }
 

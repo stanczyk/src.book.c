@@ -7,8 +7,8 @@
  * @file prg22-01.c
  * @brief <locale.h>: odczyt ustawień regionalnych
  */
-#include <stdio.h>
 #include <locale.h>
+#include <stdio.h>
 
 int main (void)
 {

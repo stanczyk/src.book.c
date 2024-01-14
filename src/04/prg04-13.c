@@ -7,9 +7,10 @@
  * @file prg04-13.c
  * @brief Przykład deklaracji i wyświetlenia zmiennej typu _Decimal32
  *
- * @pre Do kompilacji potrzebna jest biblioteka libdfp (ponieważ GLIBC nie wspiera tych typów)
+ * @pre Do kompilacji potrzebna jest biblioteka libdfp (ponieważ GLIBC 2.35 -- 2.38 nie wspiera tych typów)
  *  - pakiet dla ubuntu: sudo apt-get install -y libdfp-dev
  *  - lub kompilacja ze źródeł: https://github.com/libdfp/libdfp (configure; make; sudo make install)
+ * Wersja glibc: ldd --version
  */
 #include <stdio.h>
 
