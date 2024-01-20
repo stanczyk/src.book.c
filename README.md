@@ -39,7 +39,7 @@ Kody źródłowe przykładów do książki:<br />
 
 <sub><sub>
 Copyright &copy; 2023-2024 Jarosław Stańczyk *<jaroslaw@stanczyk.pro>*  
-Ostatnia modyfikacja 2024.01.14
+Ostatnia modyfikacja 2024.01.20
 </sub></sub>
 <sub><sub>
 eof.
