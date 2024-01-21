@@ -1,3 +1,4 @@
+2021.05.25 ======================
 # src.book.c
 Kody źródłowe przykładów do książki:<br />
 [![Okładka](./pic/okladka.jpg)](https://helion.pl/ksiazki/nowoczesny-c-przeglad-c23-z-przykladami-jaroslaw-stanczyk,nowocp.htm)
